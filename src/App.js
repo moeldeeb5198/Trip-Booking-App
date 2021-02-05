@@ -6,7 +6,7 @@ import { TouchableOpacity, Image } from "react-native";
 
 // Constants
 import { COLORS, SIZES, icons } from "../constants";
-
+import Tabs from "../navigation/tabs";
 // Screens
 import { Onboarding } from "../screens/";
 
@@ -51,6 +51,9 @@ const App = () => {
             )
           }}
         />
+
+        {/* Tabs */}
+        <Stack.Screen name="Home" component={Tabs} />
       </Stack.Navigator>
     </NavigationContainer>
   );

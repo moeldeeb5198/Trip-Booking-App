@@ -11,7 +11,7 @@ import {
 } from "react-native";
 import { COLORS, FONTS, images, SIZES } from "../constants";
 
-const Onboarding = () => {
+const Onboarding = ({ navigation }) => {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.view}>
@@ -53,7 +53,7 @@ const Onboarding = () => {
               borderRadius: 15
             }
           ]}
-          onPress={() => console.log("button clicked")}
+          onPress={() => navigation.navigate("Home")}
         >
           {/* <View style={{ , height:'100%', widht:'100%', alignItems: 'center', justifyContent: 'center', borderRaduis: 15}}> */}
           <Text style={{ color: COLORS.white, ...FONTS.h3 }}>Start !</Text>
